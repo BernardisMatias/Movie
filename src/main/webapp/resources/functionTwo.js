@@ -1,0 +1,5 @@
+function hideForm(){
+	
+	$('#addMovie').hide();
+	
+};
