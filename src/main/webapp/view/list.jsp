@@ -11,9 +11,11 @@
 table {
 	margin-right:20px;
 	margin-left: 20px;
+	border-collapse: separate;
+  	border-spacing:  7px;
 }
 #movies{
-	width:800px;
+	width:830px;
 }
 input:focus {
     background-color: #F2F2F2;
@@ -35,8 +37,11 @@ input:focus {
 #spanTittle{
 	display:initial;
 }
+.escondido{
+	display:none;
+}
 </style>
-
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,700" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet"
@@ -99,7 +104,7 @@ input:focus {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+				<li><a href="<%=request.getContextPath()%>/goToList">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Discount promotions<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -132,6 +137,7 @@ input:focus {
 				<th>Runtime (min)</th>
 				<th>Delete</th>
 				<th>Edit</th>
+				<th class="escondido" style="widtth:50px">Options</th>
 			</tr>
 		</thead>
 	</table>

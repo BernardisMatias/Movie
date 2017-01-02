@@ -48,7 +48,7 @@ public class MovieController {
 		return movie;
 	}
 
-	@RequestMapping(path="/update", method=RequestMethod.POST)
+	@RequestMapping(path="/update/", method=RequestMethod.POST)
 	public @ResponseBody Movie updateMovie(Movie movie){
 		System.out.println(movie.getTitulo() +" "+ movie.getDuracion());
 		movieDAO.updateMovie(movie);

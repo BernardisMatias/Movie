@@ -13,6 +13,11 @@
 	margin-right: 5px;
 	
 }
+#popcorn{
+	margin-left: 10px;
+	height: 250px;
+    width: 450px;
+}
 .align{
 	display: inline-block;
 }
@@ -40,14 +45,17 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li><a href="<%=request.getContextPath()%>/goToList">Home</a></li>
-				<li class="dropdown"><a class="dropdown-toggle active"
-					data-toggle="dropdown" href="#">Discount promotions<span
-						class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">2x1 Tickets</a></li>
-						<li><a href="#">Food & drink</a></li>
-						<li><a href="#">XD theaters</a></li>
-					</ul></li>
+				
+				<li class="dropdown active">
+		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Discount promotions<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+			            <li><a href="#">2x1 Tickets</a></li>
+			            <li><a href="<%=request.getContextPath()%>/foodDrink">Food & drink</a></li>
+			            <li><a href="#">XD theaters</a></li>
+		          </ul>
+		        </li>
+				
+				
 				<li><a href="#">Coming soon</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -62,7 +70,7 @@
 
 
 	<div class="foodDiv align" >
-		<img src="http://www.onceuponachef.com/images/2015/06/Crazy-Good-Spicy-Italian-Popcorn-575x382.jpg">
+		<img id="popcorn" src="http://www.onceuponachef.com/images/2015/06/Crazy-Good-Spicy-Italian-Popcorn-575x382.jpg">
 	</div>
 	
 	<div class="align" style="width:30%; margin-top:100px;">
